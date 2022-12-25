@@ -15,15 +15,15 @@ class Calculator:
 
         num1 = float(input("Enter your first number : "))
         num2 = float(input("Enter your second numbe : "))
-        opr = input("Select the operator : add(a) , subtract(s) , multiply(m) , divide(d) : ")
+        opr = input("Select the operator : add(+) , subtract(-) , multiply(*) , divide(/) : ")
 
-        if opr == "a":
+        if opr == "+":
             print(f"{num1} + {num2} = {add(num1,num2)}")
-        elif opr == "s":
+        elif opr == "-":
             print(f"{num1} - {num2} = {sub(num1,num2)}")
-        elif opr == "m":
+        elif opr == "*":
             print(f"{num1} X {num2} = {mul(num1,num2)}")
-        elif opr == "d":
+        elif opr == "/":
             print(f"{num1} / {num2} = {div(num1,num2)}")
         else :
             print("invalid input")
